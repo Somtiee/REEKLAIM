@@ -2,6 +2,9 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "node",
   "buildCommand": "npm run build",
+  "env": {
+    "NODE_OPTIONS": "--experimental-require-module"
+  },
   "functions": {
     "server.ts": {
       "includeFiles": "dist/**",

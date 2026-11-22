@@ -21,6 +21,8 @@ If Vercel Functions cannot meet the checks at zero cost, the supported alternate
 
 ## Runtime environment
 
+The Vercel configuration sets the non-secret runtime flag `NODE_OPTIONS=--experimental-require-module`. The pinned QoreChain SDK loads CosmJS, whose CommonJS modules require ESM-only dependencies. If a project-level NODE_OPTIONS already exists, ensure it includes this flag and omits its negation. [Vercel Node runtime configuration](https://vercel.com/docs/functions/runtimes/node-js/advanced-node-configuration#experimental-nodejs-require-of-es-module)
+
 | Setting | Value |
 | --- | --- |
 | NODE_ENV and APP_ORIGIN | production and the exact assigned HTTPS origin |
