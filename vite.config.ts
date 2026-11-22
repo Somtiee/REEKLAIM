@@ -14,13 +14,15 @@ export default defineConfig(({ mode }) => {
   for (const key of ['QORE_REST_PROXY_TARGET', 'VITE_QORE_REST_URL', 'VITE_QORE_EVM_RPC_URL']) {
     if (env[key]) throw new Error(`${key} overrides are disabled. Use the centralized Diana allowlist.`);
   }
-  const authConfig=loadAuthConfig({...process.env,...env});
-  const authApi=createAuthMiddleware(authConfig);
-  const privateFiles=denyPrivateFiles(authConfig?.storageDirectory);
   for(const key of Object.keys(env)) if(/^VITE_.*(SECRET|DATABASE|SERVICE_ROLE|PRIVATE_KEY)/i.test(key)) throw new Error('Server secrets must not use VITE_ names.');
+  const configureLocalApi=()=> {
+    const authConfig=loadAuthConfig({...process.env,...env});
+    return {authConfig,authApi:createAuthMiddleware(authConfig),privateFiles:denyPrivateFiles(authConfig?.storageDirectory)};
+  };
   const chainReads: Plugin = {
     name: 'reeklaim-fixed-diana-reads',
     configureServer(server) {
+      const {authConfig,authApi,privateFiles}=configureLocalApi();
       server.middlewares.use(privateFiles);
       server.middlewares.use((req, res, next) => {
         const path = req.url ?? '/';
@@ -34,7 +36,12 @@ export default defineConfig(({ mode }) => {
       server.middlewares.use(authApi);
       server.middlewares.use(createChainMiddleware(true,undefined,authConfig?.origin));
     },
-    configurePreviewServer(server) { server.middlewares.use(privateFiles); server.middlewares.use(authApi); server.middlewares.use(createChainMiddleware(false,undefined,authConfig?.origin)); },
+    configurePreviewServer(server) {
+      const {authConfig,authApi,privateFiles}=configureLocalApi();
+      server.middlewares.use(privateFiles);
+      server.middlewares.use(authApi);
+      server.middlewares.use(createChainMiddleware(false,undefined,authConfig?.origin));
+    },
   };
   return { envPrefix: [], plugins: [react(), chainReads], server: { host: '127.0.0.1', port: 5173, strictPort: true, fs: { allow: [resolve('index.html'),resolve('src'),resolve('public'),resolve('node_modules')], deny: ['.env','.env.*','**/*.{crt,pem}','**/.git/**','**/.local/**','**/private-storage/**'] } }, preview: { host: '127.0.0.1', port: 4173, strictPort: true } };
 });

@@ -20,8 +20,11 @@ describe('secure configuration and cookies',()=>{
  });
  it('does not retain malformed configuration values in errors',()=>{
   const value='synthetic credential that must not appear';
-  expect(()=>validateConfig({...config,databaseUrl:value})).toThrow(new Error('Invalid PostgreSQL connection URL.'));
-  expect(()=>loadAuthConfig({AUTH_DATABASE_URL:value})).toThrow(new Error('Invalid server authentication configuration. Check the configured origin, database URLs, storage directory and independent keys.'));
+  expect(()=>validateConfig({...config,databaseUrl:value})).toThrow(/^Invalid PostgreSQL connection URL\.$/);
+  expect(()=>loadAuthConfig({AUTH_DATABASE_URL:value})).toThrow(/Invalid server authentication configuration.*APP_ORIGIN/);
+  expect(()=>loadAuthConfig({AUTH_DATABASE_URL:value,DATABASE_URL:config.databaseUrl,APP_ORIGIN:config.origin,
+   AUTH_CSRF_SECRET:config.csrfSecret,PRIVATE_STORAGE_KEY:config.storageKey,PRIVATE_STORAGE_DIRECTORY:config.storageDirectory}))
+   .toThrow(new Error('Invalid server authentication configuration. Check: AUTH_DATABASE_URL.'));
   expect(()=>loadAuthConfig({NODE_ENV:'production',AUTH_DATABASE_URL:value,NODE_TLS_REJECT_UNAUTHORIZED:'0'})).toThrow('Certificate verification is required');
  });
  it('rejects hostile origin and omitted CSRF',()=>{const request={headers:{host:'127.0.0.1:5173',origin:'https://evil.example'}} as unknown as IncomingMessage;expect(()=>requireOrigin(request,config,true)).toThrow();expect(()=>requireCsrf(request,config,opaque())).toThrow();});
