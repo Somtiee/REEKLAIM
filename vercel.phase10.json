@@ -1,12 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "node",
-  "buildCommand": "npm run build",
-  "env": {
-    "NODE_OPTIONS": "--experimental-require-module"
-  },
+  "buildCommand": "npm run build && node scripts/build-vercel-runtime.mjs",
   "functions": {
-    "server.ts": {
+    "server.mjs": {
       "includeFiles": "dist/**",
       "maxDuration": 60
     }

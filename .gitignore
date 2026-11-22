@@ -6,6 +6,8 @@ coverage/
 !.env.example
 *.log
 .vercel/
+/server.mjs
+.vercel-runtime/
 .DS_Store
 *.local
 playwright-report/

@@ -2,6 +2,7 @@
 .env*
 .git/
 .vercel/
+server.mjs
 private-storage/
 node_modules/
 dist/
