@@ -25,6 +25,7 @@ If Vercel Functions cannot meet the checks at zero cost, the supported alternate
 | --- | --- |
 | NODE_ENV and APP_ORIGIN | production and the exact assigned HTTPS origin |
 | AUTH_DATABASE_URL and DATABASE_URL | Separate restricted connections with sslmode=verify-full |
+| REEKLAIM_DATABASE_CA_PEM | Full multiline PEM certificate from Supabase Database Settings, for the pooler's TLS trust |
 | AUTH_CSRF_SECRET and PRIVATE_STORAGE_KEY | Independent 32-byte random keys encoded as hex |
 | PRIVATE_OBJECT_ORIGIN, PRIVATE_OBJECT_BUCKET and PRIVATE_OBJECT_KEY | Approved Supabase project origin, private bucket and server-only credential |
 | PRIVATE_STORAGE_DIRECTORY | Absolute path outside web roots. Required by config in bucket mode |

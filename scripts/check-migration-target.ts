@@ -1,4 +1,5 @@
 import pg from 'pg';
+import { TLSSocket } from 'node:tls';
 
 export async function checkMigrationTarget(connectionString: string, env: NodeJS.ProcessEnv) {
  const target = new URL(connectionString);
@@ -12,13 +13,17 @@ export async function checkMigrationTarget(connectionString: string, env: NodeJS
  const client = new pg.Client({connectionString, connectionTimeoutMillis: 5000, query_timeout: 10000});
  try {
   await client.connect();
-  const result = await client.query<{database:string;role:string;tls:boolean}>(
-   'SELECT current_database() AS database, current_user AS role, COALESCE((SELECT ssl FROM pg_stat_ssl WHERE pid=pg_backend_pid()),false) AS tls',
+  const socket = client.connection.stream;
+  if (!(socket instanceof TLSSocket) || !socket.authorized) {
+   throw Object.assign(new Error('The migration client did not verify the endpoint certificate.'), { code: 'TLS_NOT_VERIFIED' });
+  }
+  const result = await client.query<{database:string;role:string}>(
+   'SELECT current_database() AS database, current_user AS role',
   );
   const actual = result.rows[0];
-  if (!actual?.tls || actual.database !== database || actual.role !== role ||
+  if (!actual || actual.database !== database || actual.role !== role ||
    ['reeklaim_auth','reeklaim_runtime'].includes(actual.role)) {
-   throw new Error('Unexpected migration database identity or role.');
+   throw Object.assign(new Error('Unexpected migration database identity or role.'), { code: 'TARGET_IDENTITY' });
   }
  } finally {
   await client.end();
