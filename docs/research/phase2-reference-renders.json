@@ -1,0 +1,89 @@
+[
+  {
+    "name": "capable",
+    "url": "https://capable.framer.website/",
+    "status": 200,
+    "headings": [
+      "Empower Your Social Connections with Capable",
+      "Empowering authentic connections for a vibrant social experience.",
+      "Discover Capable Benefits",
+      "Explore Capable's Key Features",
+      "Capable's Advanced Capabilities",
+      "Getting Started with Capable",
+      "Flexible Pricing Plans",
+      "User Reviews and Feedback",
+      "Frequently Asked Questions",
+      "Download Capable and Connect Today"
+    ],
+    "screenshots": [
+      "capable-desktop.png",
+      "capable-mobile.png"
+    ]
+  },
+  {
+    "name": "meo",
+    "url": "https://meo.framer.ai/",
+    "status": 200,
+    "headings": [
+      "Every account, sealed apart",
+      "Made for many logins",
+      "Lighter than Chromium",
+      "Isolation you can see",
+      "Loved by power users",
+      "Simple, fair pricing",
+      "Common questions"
+    ],
+    "screenshots": [
+      "meo-desktop.png",
+      "meo-mobile.png"
+    ]
+  },
+  {
+    "name": "gallery",
+    "url": "https://gallerytemplate.framer.website/",
+    "status": 200,
+    "headings": [
+      "Discover the best cafes in New York.",
+      "Join our weekly newsletter & be first to know when we add more cafes"
+    ],
+    "screenshots": [
+      "gallery-desktop.png",
+      "gallery-mobile.png"
+    ]
+  },
+  {
+    "name": "shifter",
+    "url": "https://jobshifter.framer.website/",
+    "status": 200,
+    "headings": [
+      "Build & ship a jobboard fast with Framer"
+    ],
+    "screenshots": [
+      "shifter-desktop.png",
+      "shifter-mobile.png"
+    ]
+  },
+  {
+    "name": "fluxframe",
+    "url": "https://fluxframe.framer.website/",
+    "status": 200,
+    "headings": [
+      "Build systems that run themselves",
+      "Core capabilities, engineered for scale",
+      "Build one step at a time",
+      "Built on principles that matter",
+      "Trusted by builders who move faster",
+      "No surprises. No hidden limits.",
+      "$",
+      "19",
+      "15",
+      "$",
+      "49",
+      "39"
+    ],
+    "screenshots": [
+      "fluxframe-desktop.png",
+      "fluxframe-mobile.png"
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "src/wallet/adapter.ts": "5cd38272437f76b59655022f61c657a3a9799ab8d98a07c2209aa474e3457605",
+  "src/wallet/WalletProvider.tsx": "a94e21e98f99790d47698105ba9188d9af723f82b89cfd3afbbf7bdc4cd2a31f",
+  "src/lib/network.ts": "6cfcc3722eb8b305d02267fbbee569166f32f9135a7f54df82c871d37698266a",
+  "src/lib/receipt.ts": "3c6516567d6203735b8ce6cef81d6b29d18006dcee670e245a0bc941a338c62c",
+  "server/chain.ts": "3bea3d63c86c4216e5c618eacb8bde56f004f0af8c640727b0a992cb2bd1bcb4",
+  "src/pages/ProofPage.tsx": "47b18e442e219cb0aa5883736ca4293993602813d7e3294ec9a2d447a1621ce7"
+}

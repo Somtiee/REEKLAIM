@@ -1,0 +1,57 @@
+[
+  {
+    "file": "public/brand/logo-dark.svg",
+    "sha256": "98ecbdc1e196dfd180c1eac7da8b7e9fbb5e7000a5b21d6e213059d97277b1e0",
+    "bytes": 758
+  },
+  {
+    "file": "public/brand/logo-light.svg",
+    "sha256": "fdcd6aeeb455f59411c2261af3b3dcb4bc37457cecb31768b76905ea4912c01c",
+    "bytes": 758
+  },
+  {
+    "file": "public/brand/mark.svg",
+    "sha256": "8046a049cd2011513e07ba31a6f67db7257b545df63c13aa965db4e343bfc3f6",
+    "bytes": 496
+  },
+  {
+    "file": "public/brand/social-preview.png",
+    "sha256": "b68bf01c488a30f98fea997ef53ea6bf3557427e340271a34b2adeff0eff3586",
+    "bytes": 41425
+  },
+  {
+    "file": "public/brand/social-preview.svg",
+    "sha256": "3384a5896a62f735097f795b687f46f4b05285bd4a7c3ed34afea1c061a780b7",
+    "bytes": 1984
+  },
+  {
+    "file": "public/images/backpack.jpg",
+    "sha256": "d0785a45e988c337e3264f8e9dfe35894b79d9efb69f48fe4a98a32da62d7a30",
+    "bytes": 49104
+  },
+  {
+    "file": "public/images/camera.jpg",
+    "sha256": "2999e2b88ee624f80d555021fa183313441ce0162cb5bb7687876f530d516c73",
+    "bytes": 22327
+  },
+  {
+    "file": "public/images/headphones.jpg",
+    "sha256": "05addcc624e4060102668ae298c585bc6216a520eeaee0f714fab6e9179d44f7",
+    "bytes": 142069
+  },
+  {
+    "file": "public/images/wallet.jpg",
+    "sha256": "b16631fa991d7fbfb4f07719e28b5d09b14d46e98a2d67d538cd5e0f096cb26c",
+    "bytes": 61809
+  },
+  {
+    "file": "public/fonts/OFL.txt",
+    "sha256": "e07fd1167c2aaaa6fb965dd66e1e73b13c9c95b76b2d648b6e938780f30b37af",
+    "bytes": 4534
+  },
+  {
+    "file": "public/fonts/plus-jakarta-sans-latin-wght-normal.woff2",
+    "sha256": "153fc85b70298beeb1d61a5f723331649e7f23bb77302a66e61cb3e2fbdb5e79",
+    "bytes": 27348
+  }
+]

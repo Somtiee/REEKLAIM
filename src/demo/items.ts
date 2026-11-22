@@ -1,0 +1,18 @@
+export type Category = 'All items' | 'Electronics' | 'Luggage' | 'Wallets' | 'Keys' | 'Documents' | 'Pets' | 'Other';
+export const categories: Category[] = ['All items', 'Electronics', 'Luggage', 'Wallets', 'Keys', 'Documents', 'Pets', 'Other'];
+export interface DemoItem { id: string; title: string; category: Category; status: 'lost' | 'found'; city: string; country: string; date: string; image?: string; art?: 'keys' | 'suitcase' | 'document' | 'pet'; rewardUqor?: string; description: string }
+// Explicitly isolated fictional examples. No owner records, private evidence or blockchain receipts.
+export const demoItems: DemoItem[] = [
+  { id: 'demo-camera', title: 'A camera full of memories', category: 'Electronics', status: 'found', city: 'Lagos', country: 'Nigeria', date: '2026-11-16', image: 'camera', description: 'A compact film camera in a public place. This is a sample listing, not an actual found item.' },
+  { id: 'demo-backpack', title: 'Black everyday backpack', category: 'Luggage', status: 'lost', city: 'London', country: 'United Kingdom', date: '2026-11-15', image: 'backpack', rewardUqor: '5000000', description: 'A daily companion with a front pocket. Distinguishing details would be shared privately in a real claim.' },
+  { id: 'demo-wallet', title: 'Brown leather cardholder', category: 'Wallets', status: 'found', city: 'Accra', country: 'Ghana', date: '2026-11-16', image: 'wallet', description: 'A sample leather cardholder. No cards, personal details or identity documents are displayed.' },
+  { id: 'demo-headphones', title: 'Over-ear headphones', category: 'Electronics', status: 'lost', city: 'Nairobi', country: 'Kenya', date: '2026-11-14', image: 'headphones', rewardUqor: '2000000', description: 'Headphones from an everyday commute. The proposed reward is illustrative and no funds are reserved.' },
+  { id: 'demo-keys', title: 'Keys with a little green tag', category: 'Keys', status: 'found', city: 'Lagos', country: 'Nigeria', date: '2026-11-13', art: 'keys', description: 'An original illustration of a sample key set. No home location or identifying lock details are included.' },
+  { id: 'demo-case', title: 'The weekend carry-on', category: 'Luggage', status: 'lost', city: 'Paris', country: 'France', date: '2026-11-12', art: 'suitcase', description: 'A fictional carry-on listing. In a live report, the location would stay coarse and contact details private.' },
+  { id: 'demo-docs', title: 'A document folder', category: 'Documents', status: 'found', city: 'London', country: 'United Kingdom', date: '2026-11-11', art: 'document', description: 'A sample folder illustration with no legible personal documents. Private documents must never be published here.' },
+  { id: 'demo-pet', title: 'A curious little companion', category: 'Pets', status: 'lost', city: 'Accra', country: 'Ghana', date: '2026-11-10', art: 'pet', description: 'A fictional pet example. A QR tag helps someone reach a recovery page; it does not provide GPS tracking.' },
+];
+export function filterDemoItems(items: DemoItem[], { query = '', category = 'All items', location = 'Anywhere', status = 'all', since = '' }: { query?: string; category?: string; location?: string; status?: string; since?: string }) {
+  const needle = query.trim().toLowerCase();
+  return items.filter((item) => (status === 'all' || item.status === status) && (category === 'All items' || item.category === category) && (location === 'Anywhere' || item.city === location) && (!since || item.date >= since) && (!needle || `${item.title} ${item.category} ${item.city} ${item.country}`.toLowerCase().includes(needle)));
+}

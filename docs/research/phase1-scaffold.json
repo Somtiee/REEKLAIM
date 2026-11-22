@@ -1,0 +1,40 @@
+{
+  "createdAt": "2026-11-17T14:31:11.742496+00:00",
+  "command": [
+    "node",
+    "C:\\Users\\USER\\AppData\\Local\\Temp\\reeklaim-phase1\\official-cli\\package\\dist\\index.js",
+    "C:\\Users\\USER\\AppData\\Local\\Temp\\reeklaim-phase1\\reeklaim-scaffold",
+    "--template",
+    "fullstack-web",
+    "--network",
+    "testnet",
+    "--package-manager",
+    "npm",
+    "--no-install",
+    "--yes"
+  ],
+  "exitCode": 0,
+  "output": "T   create-qorechain-dapp \n|\no  Scaffolding\u2026\n|\no  Next steps ------------------------------------------------------------+\n|                                                                         |\n|  cd C:\\Users\\USER\\AppData\\Local\\Temp\\reeklaim-phase1\\reeklaim-scaffold  |\n|  npm install                                                            |\n|  npm run dev                                                            |\n|                                                                         |\n+-------------------------------------------------------------------------+\n|\n\u2014  Done! Created reeklaim-scaffold at C:\\Users\\USER\\AppData\\Local\\Temp\\reeklaim-phase1\\reeklaim-scaffold\n\n",
+  "version": "0.14.0",
+  "packageIntegrity": "sha512-W4Xb5fOUuAaXZh6um4pVuHvX4glou5/I95eiXV9dM0RpZCGQQakY8LbskF10XLmNcNtofUMjY6+gFfjuj4awwA==",
+  "tarball": "https://registry.npmjs.org/create-qorechain-dapp/-/create-qorechain-dapp-0.14.0.tgz",
+  "template": "fullstack-web",
+  "integrationTarget": "repository root",
+  "baselineSha256": {
+    ".env": "cf165aeb4be92f8ceba21918b342043c0595f2bf15243755778067a31c22ca29",
+    ".env.example": "9e85351cf458e90634393bf41c51dcdb9dee4767046abadec49c100ec120c792",
+    "index.html": "f177bcf95a331ab886690f39c0cf29649665681ebeb0d85bfdd1a29f9dc9317a",
+    "package.json": "75819e28941770453205df52644287add472b52f0e499ddd9d823cb583b7d07f",
+    "README.md": "22c5de9e51a3f4350f700c0adea25e043a3f7ae3c049eec0e23bb7f9b3fb8dd2",
+    "tsconfig.json": "ad98e3fe2a24b9a876a42197e7bc47f505c615588516911dbfe3acf44d2af69d",
+    "vite.config.ts": "ab2468e96e88ace2718947721547e74aeddac04ba6465150894f092b9d7bb2b3",
+    "src/App.tsx": "08242208198efab1e3d409fe58098da0ad6667f6dd5fa1036f6b7a8582188681",
+    "src/main.tsx": "dcb706be7516603a82106b2bc3d7f8749332d1d44e593cc2d23e69c0ec000baa",
+    "src/vite-env.d.ts": "f211d89466ea2e9ee0ecea69efe097d16236ee88dcc12771861d006a1f9b8727"
+  },
+  "excludedFromIntegration": [
+    ".env (generated config not copied)",
+    "README.md (original preserved as docs/research/scaffold-README.md)"
+  ],
+  "planningDocumentsPreserved": true
+}

@@ -1,0 +1,77 @@
+{
+  "checkedAtUtc": "2026-11-17T14:50:42.250380+00:00",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 757,
+      "contentType": "text/html"
+    },
+    {
+      "path": "/dev/qorechain",
+      "status": 200,
+      "bytes": 757,
+      "contentType": "text/html"
+    },
+    {
+      "path": "/src/App.tsx",
+      "status": 200,
+      "bytes": 24235,
+      "contentType": "text/javascript",
+      "reactTransformed": true
+    },
+    {
+      "path": "/api/qorechain/health",
+      "status": 200,
+      "bytes": 233,
+      "contentType": "application/json",
+      "response": {
+        "native": {
+          "ok": true,
+          "chainId": "qorechain-diana",
+          "height": "10260959",
+          "blockTime": "2026-11-17T14:50:36.965801391Z",
+          "checkedAt": "2026-11-17T14:50:38.180Z"
+        },
+        "evm": {
+          "ok": true,
+          "chainId": "0x2648"
+        },
+        "testnetOnly": true,
+        "authentication": false
+      }
+    },
+    {
+      "path": "/api/qorechain/broadcast",
+      "status": 404,
+      "response": "{\"error\":\"Read route unavailable.\"}"
+    },
+    {
+      "path": "/api/qorechain/health?url=https://example.com",
+      "status": 502,
+      "response": "{\"error\":\"Unexpected or missing query parameters.\",\"verified\":false}"
+    }
+  ],
+  "browserVisualCheck": "Not performed: computer-use tool stopped because it could not determine Chrome URL.",
+  "walletTest": "No real QoreX connected or approved.",
+  "productionPreviewChecks": [
+    {
+      "path": "/",
+      "method": "GET",
+      "status": 200,
+      "bytes": 600
+    },
+    {
+      "path": "/api/qorechain/receipt",
+      "method": "GET",
+      "status": 404,
+      "response": "{\"error\":\"Read route unavailable.\"}"
+    },
+    {
+      "path": "/api/qorechain/health",
+      "method": "POST",
+      "status": 405,
+      "response": "{\"error\":\"Only fixed read operations are permitted.\"}"
+    }
+  ]
+}

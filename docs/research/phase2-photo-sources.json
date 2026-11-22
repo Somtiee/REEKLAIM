@@ -1,0 +1,42 @@
+[
+  {
+    "file": "public/images/headphones.jpg",
+    "author": "Vladislav Anchuk",
+    "source": "https://www.pexels.com/photo/black-studio-headphones-on-white-background-30428610/",
+    "download": "https://images.pexels.com/photos/30428610/pexels-photo-30428610.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "license": "Pexels License (not MIT)",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sha256": "05addcc624e4060102668ae298c585bc6216a520eeaee0f714fab6e9179d44f7",
+    "bytes": 142069
+  },
+  {
+    "file": "public/images/camera.jpg",
+    "author": "craveiro_ pics",
+    "source": "https://www.pexels.com/photo/vintage-camera-on-white-background-4219113/",
+    "download": "https://images.pexels.com/photos/4219113/pexels-photo-4219113.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "license": "Pexels License (not MIT)",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sha256": "2999e2b88ee624f80d555021fa183313441ce0162cb5bb7687876f530d516c73",
+    "bytes": 22327
+  },
+  {
+    "file": "public/images/wallet.jpg",
+    "author": "Gül Işık",
+    "source": "https://www.pexels.com/photo/the-leather-wallet-is-made-from-brown-leather-28028262/",
+    "download": "https://images.pexels.com/photos/28028262/pexels-photo-28028262.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "license": "Pexels License (not MIT)",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sha256": "b16631fa991d7fbfb4f07719e28b5d09b14d46e98a2d67d538cd5e0f096cb26c",
+    "bytes": 61809
+  },
+  {
+    "file": "public/images/backpack.jpg",
+    "author": "Cindy Bartillon",
+    "source": "https://www.pexels.com/photo/a-black-leather-backpack-on-the-white-table-15246346/",
+    "download": "https://images.pexels.com/photos/15246346/pexels-photo-15246346.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "license": "Pexels License (not MIT)",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "sha256": "d0785a45e988c337e3264f8e9dfe35894b79d9efb69f48fe4a98a32da62d7a30",
+    "bytes": 49104
+  }
+]

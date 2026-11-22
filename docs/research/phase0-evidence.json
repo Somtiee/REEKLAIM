@@ -1,0 +1,180 @@
+{
+  "phase": "0",
+  "researchDate": "2026-11-17",
+  "timezone": "Africa/Lagos",
+  "manifestGeneratedAtUtc": "2026-11-17T14:27:17.601952+00:00",
+  "workspaceInitialState": "Empty directory; no project dependencies or git history observed",
+  "status": "Planning complete; no application implemented/deployed and no transaction signed/broadcast",
+  "packages": [
+    {
+      "name": "create-qorechain-dapp",
+      "version": "0.14.0",
+      "license": "Apache-2.0",
+      "tarball": "https://registry.npmjs.org/create-qorechain-dapp/-/create-qorechain-dapp-0.14.0.tgz",
+      "registryIntegrity": "sha512-W4Xb5fOUuAaXZh6um4pVuHvX4glou5/I95eiXV9dM0RpZCGQQakY8LbskF10XLmNcNtofUMjY6+gFfjuj4awwA==",
+      "downloadIntegrityMatched": true,
+      "installedInWorkspace": false,
+      "inspectedDistributedFiles": [
+        "dist/index.js",
+        "templates/fullstack-web/vite.config.ts",
+        "templates/hardhat/hardhat.config.ts",
+        "templates/viem-wagmi/vite.config.ts",
+        "templates/viem-wagmi/src/vite-env.d.ts",
+        "templates/viem-wagmi/src/wagmi.ts",
+        "templates/rollup-app/src/index.ts",
+        "templates/hardhat/scripts/window.ts",
+        "templates/hardhat/test/Counter.ts",
+        "templates/hardhat/ignition/modules/Counter.ts",
+        "templates/fullstack-web/src/vite-env.d.ts",
+        "templates/foundry/scripts/window.ts",
+        "templates/evm-solidity/contracts/Counter.artifact.ts",
+        "templates/evm-solidity/scripts/deploy.ts",
+        "templates/cosmwasm/scripts/connect.ts",
+        "templates/cosmwasm/scripts/instantiate.ts",
+        "templates/cosmwasm/scripts/propose-store.ts",
+        "templates/cosmwasm/scripts/query.ts"
+      ]
+    },
+    {
+      "name": "@qorechain/sdk",
+      "version": "0.14.0",
+      "license": "Apache-2.0",
+      "tarball": "https://registry.npmjs.org/@qorechain/sdk/-/sdk-0.14.0.tgz",
+      "registryIntegrity": "sha512-EwoH2WX5hRUK685a3NDDd0dZcn7QL/6M11huVh7Kx37nFDMryF8QAHrJe0to8EcRmRnLbMH5UNnZbjoI48wo9Q==",
+      "downloadIntegrityMatched": true,
+      "installedInWorkspace": false,
+      "inspectedDistributedFiles": [
+        "dist/index.d.ts",
+        "dist/index.js"
+      ]
+    },
+    {
+      "name": "@qorechain/qorex-types",
+      "version": "0.1.0",
+      "license": "Apache-2.0",
+      "tarball": "https://registry.npmjs.org/@qorechain/qorex-types/-/qorex-types-0.1.0.tgz",
+      "registryIntegrity": "sha512-M3rzdQp9YfEPuQ2EnBtqjAxR61T4lPD0JrW35Hh7k6Ny4E0o3qITvGGN8ssHnBzPz0yq2vVY/BECpjaAvT5xWQ==",
+      "downloadIntegrityMatched": true,
+      "installedInWorkspace": false,
+      "inspectedDistributedFiles": [
+        "dist/icon.d.ts",
+        "dist/icon.js",
+        "dist/index.d.ts",
+        "dist/index.js"
+      ]
+    },
+    {
+      "name": "@qorechain/qoresign",
+      "version": "0.2.0",
+      "license": "Apache-2.0",
+      "tarball": "https://registry.npmjs.org/@qorechain/qoresign/-/qoresign-0.2.0.tgz",
+      "registryIntegrity": "sha512-bOhFn/Xb5SQbDrOccYa0sKsh7Ds07qyeUd3JrqjqqRyx8sUOgu8HeOYV2tWR+7hVeHKhWaTY6oGEnEax+JeVcQ==",
+      "downloadIntegrityMatched": true,
+      "installedInWorkspace": false,
+      "inspectedDistributedFiles": [
+        "dist/chunk-CC36VDKC.js",
+        "dist/index.d.ts",
+        "dist/index.js",
+        "dist/message-ITR1vTTV.d.ts",
+        "dist/network.d.ts",
+        "dist/network.js"
+      ]
+    }
+  ],
+  "repositoryRevisions": {
+    "sdk": "17292973f865b3c4a8c97a9a20b9b8ccbe7da013",
+    "x": "bcb863fe457e3fe6eb825af6458d2430c7ac6c69",
+    "workshop": "e54900cadafc1887d65fcc167613292d6d19a10f",
+    "sign": "d146c7167a9afa5e94ee4a734bb44f842a2b4a0b"
+  },
+  "scaffoldProbe": {
+    "tool": "create-qorechain-dapp",
+    "version": "0.14.0",
+    "execution": "node <temporary extracted package>/dist/index.js <temporary scaffold-probe> --template fullstack-web --network testnet --package-manager npm --no-install --yes",
+    "exitCode": 0,
+    "outputObserved": "Done! Created scaffold-probe",
+    "temporaryOnly": true,
+    "dependenciesInstalled": false,
+    "countsAsDeliveredApplicationScaffold": false,
+    "generatedFileSha256": {
+      ".env": "cf165aeb4be92f8ceba21918b342043c0595f2bf15243755778067a31c22ca29",
+      ".env.example": "9e85351cf458e90634393bf41c51dcdb9dee4767046abadec49c100ec120c792",
+      "index.html": "f177bcf95a331ab886690f39c0cf29649665681ebeb0d85bfdd1a29f9dc9317a",
+      "package.json": "459155ef92763becef801f183dc1f3836316470e548d4b31e983cbef15f4c23c",
+      "README.md": "22c5de9e51a3f4350f700c0adea25e043a3f7ae3c049eec0e23bb7f9b3fb8dd2",
+      "tsconfig.json": "ad98e3fe2a24b9a876a42197e7bc47f505c615588516911dbfe3acf44d2af69d",
+      "vite.config.ts": "ab2468e96e88ace2718947721547e74aeddac04ba6465150894f092b9d7bb2b3",
+      "src/App.tsx": "08242208198efab1e3d409fe58098da0ad6667f6dd5fa1036f6b7a8582188681",
+      "src/main.tsx": "dcb706be7516603a82106b2bc3d7f8749332d1d44e593cc2d23e69c0ec000baa",
+      "src/vite-env.d.ts": "f211d89466ea2e9ee0ecea69efe097d16236ee88dcc12771861d006a1f9b8727"
+    }
+  },
+  "networkProbes": [
+    {
+      "url": "https://rpc-testnet.qore.host/status",
+      "method": "GET",
+      "status": 200,
+      "chainId": "qorechain-diana",
+      "height": "10259320",
+      "blockTime": "2026-11-17T14:11:28.337153803Z",
+      "catchingUp": false
+    },
+    {
+      "url": "https://api-testnet.qore.host/cosmos/base/tendermint/v1beta1/node_info",
+      "method": "GET",
+      "status": 200,
+      "chainId": "qorechain-diana"
+    },
+    {
+      "url": "https://api-testnet.qore.host/qorechain/pqc/v1/protocol_features",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "url": "https://api-testnet.qore.host/cosmwasm/wasm/v1/codes/params",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "url": "https://evm-testnet.qore.host",
+      "method": "POST eth_chainId (read only)",
+      "status": 403
+    }
+  ],
+  "retrievalLimitations": [
+    "Web tool failed to retrieve fest prizes/rules/kits/projects; direct official HTTPS succeeded.",
+    "Initial sandbox direct network reads failed; approved read-only network access succeeded.",
+    "Marketplace screenshot-image fetches failed; listing and live-preview content were readable; no rendered breakpoint QA.",
+    "Temporary script-host process launched by mistaken file association was identified and stopped; explicit node CLI run succeeded."
+  ],
+  "researchCopies": "Temporary research folder only; no third-party source or design assets copied into project",
+  "liveWalletObserved": false,
+  "deploymentObserved": false,
+  "transactionEvidence": [],
+  "documentChecks": {
+    "status": "passed",
+    "requiredMarkdownFiles": 15,
+    "allPresentAndNonempty": true,
+    "relativeFileLinksChecked": 16,
+    "brokenRelativeFileLinks": 0,
+    "balancedMarkdownCodeFences": true,
+    "scope": "Document consistency checks only; no product tests exist or ran",
+    "deliverableSha256": {
+      "AGENTS.md": "6c99d20b80fa5feff2a604a5d888247ed58933cee911b8e5aa022a2a0a11996e",
+      "docs/MASTER_PLAN.md": "69e39f489576585b1720e551de3ebbf8ceafc55c95f3689e1c7411a57f8e987d",
+      "docs/ARCHITECTURE.md": "29ffdaa2be8568ccd681bdc0fd830f9f0f8b719f77643e8cdc50002e9b72dd08",
+      "docs/PRODUCT_REQUIREMENTS.md": "b1b62a618da81ef1be5f6f76aa6318a3bbe7ee8daccf5b2cb492b14ebceed682",
+      "docs/DATABASE_DESIGN.md": "720ad45265ae01b16a5354403c4d7bf3dc0d2cd8f5669f1e6a0ea5f246488f74",
+      "docs/BLOCKCHAIN_INTEGRATION.md": "7394d41946f1576c7d863c9af079da8d23a44f17d5c99f8405d99e38e95150ad",
+      "docs/AUTHENTICATION_DESIGN.md": "12ad8f55ceadff067a422dad645d84fe24c6abf407b79e237e22b06bd64dd07d",
+      "docs/UI_UX_DESIGN.md": "75711218c0a6807e743a4c2574c9d91f9dc659770fcb1759c5a25ec5bb3ac85e",
+      "docs/SECURITY_THREAT_MODEL.md": "ec82201ce28e3a55071ae88d08978b0817beba8c83d62c8f057a03c824b29d51",
+      "docs/HACKATHON_COMPLIANCE.md": "85ec64060356eaac55d4d96a0816e1695d6371c4663b19d42059c78eb917c5b8",
+      "docs/EXECUTION_PHASES.md": "6ebaa26422f19729f30c40b2b28adc82178697ad1f0b7070097eb909bde75917",
+      "docs/SOURCE_REFERENCES.md": "e2257eb0a12cfe66b11eb42fd6a72242ad4b13c8ef34f15d5a82d50f17535967",
+      "docs/TESTNET_ECONOMY.md": "7f4e4190b5651d3d30d9791590a42615855170dbc50076c910fdc8b321f6af0b",
+      "AI_USAGE.md": "58796806cc7a5151b012cc050c828939dd2a705c6bcdc994e98a75f0a5895232",
+      "THIRD_PARTY_NOTICES.md": "5684c5f7a2ddee3169f2ef02bddd99f8e4f03398a887cdc95a8f2e4797030cd0"
+    }
+  }
+}

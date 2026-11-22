@@ -1,0 +1,32 @@
+{
+  "src/wallet/adapter.ts": {
+    "before": "5cd38272437f76b59655022f61c657a3a9799ab8d98a07c2209aa474e3457605",
+    "after": "5cd38272437f76b59655022f61c657a3a9799ab8d98a07c2209aa474e3457605",
+    "unchanged": true
+  },
+  "src/wallet/WalletProvider.tsx": {
+    "before": "a94e21e98f99790d47698105ba9188d9af723f82b89cfd3afbbf7bdc4cd2a31f",
+    "after": "4d430bf416092721eb35149c13724d087a87a1bfed010d0ef6d21353304cdbb9",
+    "unchanged": false
+  },
+  "src/lib/network.ts": {
+    "before": "6cfcc3722eb8b305d02267fbbee569166f32f9135a7f54df82c871d37698266a",
+    "after": "6cfcc3722eb8b305d02267fbbee569166f32f9135a7f54df82c871d37698266a",
+    "unchanged": true
+  },
+  "src/lib/receipt.ts": {
+    "before": "3c6516567d6203735b8ce6cef81d6b29d18006dcee670e245a0bc941a338c62c",
+    "after": "3c6516567d6203735b8ce6cef81d6b29d18006dcee670e245a0bc941a338c62c",
+    "unchanged": true
+  },
+  "server/chain.ts": {
+    "before": "3bea3d63c86c4216e5c618eacb8bde56f004f0af8c640727b0a992cb2bd1bcb4",
+    "after": "3bea3d63c86c4216e5c618eacb8bde56f004f0af8c640727b0a992cb2bd1bcb4",
+    "unchanged": true
+  },
+  "src/pages/ProofPage.tsx": {
+    "before": "47b18e442e219cb0aa5883736ca4293993602813d7e3294ec9a2d447a1621ce7",
+    "after": "47b18e442e219cb0aa5883736ca4293993602813d7e3294ec9a2d447a1621ce7",
+    "unchanged": true
+  }
+}

@@ -1,0 +1,4 @@
+export function LogoMark({ className = '' }: { className?: string }) {
+  return <svg className={className} viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M14 3H7a4 4 0 0 0-4 4v7M26 3h7a4 4 0 0 1 4 4v7M3 26v7a4 4 0 0 0 4 4h7" stroke="currentColor" strokeWidth="4" strokeLinecap="round" /><rect x="10" y="10" width="7" height="7" rx="2" fill="currentColor" /><rect x="25" y="10" width="5" height="7" rx="2" fill="currentColor" /><rect x="10" y="25" width="7" height="5" rx="2" fill="currentColor" /><path d="M25 23v6a7 7 0 0 0 7 7h4m-5-5 5 5-5 3" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>;
+}
+export function Brand({ compact = false }: { compact?: boolean }) { return <span className="brand"><LogoMark />{!compact && <span>ReeKlaim<span className="brand-dot">.</span></span>}</span>; }

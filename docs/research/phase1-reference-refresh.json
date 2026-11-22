@@ -1,0 +1,216 @@
+[
+  {
+    "key": "prizes",
+    "url": "https://build.qorechain.io/prizes",
+    "status": 200,
+    "bytes": 202676,
+    "sha256": "5e3c6ca8bf8df78da19ab8a51ac4c6d5c6f1076c6129dc8cbd63f17ec5d14589"
+  },
+  {
+    "key": "rules",
+    "url": "https://build.qorechain.io/rules",
+    "status": 200,
+    "bytes": 143934,
+    "sha256": "e7d10a53433bb32c1fa5bb44cf7d6da30c6a6357f1954c8be8ea9a64c7cce190"
+  },
+  {
+    "key": "kits",
+    "url": "https://build.qorechain.io/kits",
+    "status": 200,
+    "bytes": 285218,
+    "sha256": "45363e8d09fdc3736f8170e1853a11bae8157440b9126f249abc947ff2b8f52f"
+  },
+  {
+    "key": "workshop",
+    "url": "https://docs.qorechain.io/build-before-qday/workshop-1/",
+    "status": 200,
+    "bytes": 82175,
+    "sha256": "815a31c92d2cf2f2626c45ff5e23a183091afd89e63d521a656956072886ad4c"
+  },
+  {
+    "key": "inspector",
+    "url": "https://docs.qorechain.io/build-before-qday/workshop-1/apps/hybrid-inspector/",
+    "status": 200,
+    "bytes": 68347,
+    "sha256": "5c8f95c26f47008dca93af588084d1a1aec2b58d43568fbdb68d9c13907ed5ab"
+  },
+  {
+    "key": "integrations",
+    "url": "https://docs.qorechain.io/developer-tools/qorex-integrations/",
+    "status": 200,
+    "bytes": 149254,
+    "sha256": "378face353d3c3e31b9888edf3c26f36a7304ee5f684d2822ef32e636dc4bdce"
+  },
+  {
+    "key": "wallet",
+    "url": "https://docs.qorechain.io/qorex/overview/",
+    "status": 200,
+    "bytes": 51015,
+    "sha256": "f2b43a7dc37cf574b08ea55232d8d40909665565a4ae858c53e0b95ba7501479"
+  },
+  {
+    "key": "siwq",
+    "url": "https://docs.qorechain.io/qoresign/guides/sign-in/",
+    "status": 200,
+    "bytes": 44103,
+    "sha256": "ba276c118164938e4ee703ccbe521a0e1584a541247bade9b8d5c061792ad102"
+  },
+  {
+    "key": "chainkit",
+    "url": "https://docs.qorechain.io/developer-tools/chain-dev-sdk/",
+    "status": 200,
+    "bytes": 132376,
+    "sha256": "d1407d1e417bf66467002e8c6ce0283b4a81e7c05832fb5fbc342bd250a54ada"
+  },
+  {
+    "key": "capable",
+    "url": "https://www.framer.com/marketplace/templates/capable/",
+    "status": 200,
+    "bytes": 128358,
+    "sha256": "8497d7e5d249d698afcf9e7d2b760a9735ec0efd613eec6ac1bcdd647251fd50"
+  },
+  {
+    "key": "gallery",
+    "url": "https://www.framer.com/marketplace/templates/gallery/",
+    "status": 200,
+    "bytes": 138385,
+    "sha256": "bca325c5eb47c146e4717cff84186c356634fb9e9636afa0de794966e35904e6"
+  },
+  {
+    "key": "meo",
+    "url": "https://www.framer.com/marketplace/templates/meo/",
+    "status": 200,
+    "bytes": 136638,
+    "sha256": "8f6afce726045a0717fbc848f5b20ab817deba82aa76dc804cd78d61371d184b"
+  },
+  {
+    "key": "sdk-repo",
+    "url": "https://raw.githubusercontent.com/qorechain/qorechain-sdk/main/README.md",
+    "status": 200,
+    "bytes": 11517,
+    "sha256": "66e63577c96f6bf7b784f414d7e854801e2f6b6ec30c45363efc7c539dd9c8eb"
+  },
+  {
+    "key": "x-repo",
+    "url": "https://raw.githubusercontent.com/qorechain/qorex-integrations/main/README.md",
+    "status": 200,
+    "bytes": 3486,
+    "sha256": "cba4cbd70bfaa3fc37e668fd482165f664c2d0a4ade6b9506ab1f795cd3188fc"
+  },
+  {
+    "key": "workshops-repo",
+    "url": "https://raw.githubusercontent.com/qorechain/build-before-qday/main/README.md",
+    "status": 200,
+    "bytes": 2368,
+    "sha256": "e792585962c5c2f98b2bedd97a70a41b337b05263a03b5e25c94d7114eaba354"
+  },
+  {
+    "key": "pkg-create-qorechain-dapp",
+    "url": "https://registry.npmjs.org/create-qorechain-dapp/latest",
+    "status": 200,
+    "version": "0.14.0",
+    "engines": {
+      "node": ">=20"
+    },
+    "peers": null,
+    "dependencies": {
+      "picocolors": "^1.1.0",
+      "@clack/prompts": "^0.7.0"
+    },
+    "sha256": "24c91eaea8eb5b5b701d7623cec4c1c0bb59f6907fa8047e6f3ec3019c65e9ab"
+  },
+  {
+    "key": "pkg-sdk",
+    "url": "https://registry.npmjs.org/@qorechain/sdk/latest",
+    "status": 200,
+    "version": "0.14.0",
+    "engines": null,
+    "peers": {
+      "viem": "^2.0.0"
+    },
+    "dependencies": {
+      "bech32": "^2.0.0",
+      "@scure/base": "^1.2.0",
+      "@scure/bip32": "^1.7.0",
+      "@scure/bip39": "^1.6.0",
+      "cosmjs-types": "^0.11.0",
+      "@cosmjs/amino": "^0.39.0",
+      "@noble/curves": "^1.9.0",
+      "@noble/hashes": "^1.8.0",
+      "@qorechain/evm": "^0.14.0",
+      "@qorechain/pqc": "^0.2.1",
+      "@cosmjs/stargate": "^0.39.0",
+      "@bufbuild/protobuf": "^2.2.0",
+      "micro-key-producer": "^0.9.0",
+      "@cosmjs/proto-signing": "^0.39.0",
+      "@cosmjs/tendermint-rpc": "^0.39.0",
+      "@cosmjs/cosmwasm-stargate": "^0.39.0"
+    },
+    "sha256": "e75dd451aa5941d0de0c6ec05bc910130d199c4b08eee8b8d813d97dc82def21"
+  },
+  {
+    "key": "pkg-react",
+    "url": "https://registry.npmjs.org/@qorechain/react/latest",
+    "status": 200,
+    "version": "0.14.0",
+    "engines": null,
+    "peers": {
+      "react": "^18.0.0 || ^19.0.0"
+    },
+    "dependencies": {
+      "@qorechain/sdk": "^0.14.0"
+    },
+    "sha256": "7ac01ac8a66bd02c9352c65b0c3b0dacfcc4f0ee9c0b54485e088f7b845ecc61"
+  },
+  {
+    "key": "pkg-qorex-types",
+    "url": "https://registry.npmjs.org/@qorechain/qorex-types/latest",
+    "status": 200,
+    "version": "0.1.0",
+    "engines": {
+      "node": ">=20"
+    },
+    "peers": null,
+    "dependencies": null,
+    "sha256": "aa860d98cb26dabf92e211e2ccb5c4aff8441f38ae85a35611fc6bbd50d385e3"
+  },
+  {
+    "key": "pkg-qoresign",
+    "url": "https://registry.npmjs.org/@qorechain/qoresign/latest",
+    "status": 200,
+    "version": "0.2.0",
+    "engines": {
+      "node": ">=20"
+    },
+    "peers": null,
+    "dependencies": {
+      "@scure/base": "2.4.0",
+      "@scure/bip32": "2.4.0",
+      "@scure/bip39": "2.4.0",
+      "@noble/curves": "2.4.0",
+      "@noble/hashes": "2.4.0",
+      "@qorechain/pqc": "0.2.3"
+    },
+    "sha256": "ac94d08faf73a2cc5b90da8880b6cc83a605f1be10416836c3de9f4c2fad5c23"
+  },
+  {
+    "key": "pkg-qorex-wallet-mock",
+    "url": "https://registry.npmjs.org/@qorechain/qorex-wallet-mock/latest",
+    "status": 200,
+    "version": "0.1.0",
+    "engines": {
+      "node": ">=20.16"
+    },
+    "peers": null,
+    "dependencies": {
+      "viem": "2.57.5",
+      "@scure/base": "2.4.0",
+      "@scure/bip39": "2.4.0",
+      "@noble/curves": "2.4.0",
+      "@noble/hashes": "2.4.0",
+      "@qorechain/qoresign": "0.1.0",
+      "@qorechain/qorex-types": "0.1.0"
+    },
+    "sha256": "8ac8c8461c3ed9a27abc42a329cc18d2356a349c74f27c3320cc0e074c356e51"
+  }
+]

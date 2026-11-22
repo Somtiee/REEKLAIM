@@ -1,0 +1,135 @@
+[
+  {
+    "name": "prizes",
+    "status": 200,
+    "url": "https://build.qorechain.io/prizes",
+    "textStart": " Prizes | Build Before Q-Day Skip to content QORE CHAIN Build Before Q-Day Start here Projects Prize"
+  },
+  {
+    "name": "rules",
+    "status": 200,
+    "url": "https://build.qorechain.io/rules",
+    "textStart": " Rules | Build Before Q-Day Skip to content QORE CHAIN Build Before Q-Day Start here Projects Prizes"
+  },
+  {
+    "name": "kits",
+    "status": 200,
+    "url": "https://build.qorechain.io/kits",
+    "textStart": " Kits | Build Before Q-Day Skip to content QORE CHAIN Build Before Q-Day Start here Projects Prizes "
+  },
+  {
+    "name": "projects",
+    "status": 200,
+    "url": "https://build.qorechain.io/projects",
+    "textStart": " Projects | Build Before Q-Day Skip to content QORE CHAIN Build Before Q-Day Start here Projects Pri"
+  },
+  {
+    "name": "docs",
+    "status": 200,
+    "url": "https://docs.qorechain.io/",
+    "textStart": " QoreChain Documentation Skip to main content English English \u0627\u0644\u0639\u0631\u0628\u064a\u0629 Deutsch Espa\u00f1ol Fran\u00e7ais Itali"
+  },
+  {
+    "name": "qorex",
+    "status": 200,
+    "url": "https://docs.qorechain.io/qorex/overview/",
+    "textStart": " QoreX Wallet | QoreChain Documentation Skip to main content English English \u0627\u0644\u0639\u0631\u0628\u064a\u0629 Deutsch Espa\u00f1ol"
+  },
+  {
+    "name": "integrations",
+    "status": 200,
+    "url": "https://docs.qorechain.io/developer-tools/qorex-integrations/",
+    "textStart": " QoreX Integrations | QoreChain Documentation Skip to main content English English \u0627\u0644\u0639\u0631\u0628\u064a\u0629 Deutsch E"
+  },
+  {
+    "name": "inspector",
+    "status": 200,
+    "url": "https://docs.qorechain.io/build-before-qday/workshop-1/apps/hybrid-inspector/",
+    "textStart": " Hybrid Inspector | QoreChain Documentation Skip to main content English English \u0627\u0644\u0639\u0631\u0628\u064a\u0629 Deutsch Esp"
+  },
+  {
+    "name": "marketplace",
+    "status": 200,
+    "url": "https://www.framer.com/marketplace/templates/",
+    "textStart": " Website Templates \u2014 Framer Marketplace Templates Browse polished templates from the community to fi"
+  },
+  {
+    "name": "terms",
+    "status": 200,
+    "url": "https://www.framer.com/legal/community-terms/1.0",
+    "textStart": " Framer: Free website builder and AI design agent ')\"> Framer Platform Solutions Resources Enterpris"
+  },
+  {
+    "name": "capable-preview",
+    "status": 200,
+    "url": "https://capable.framer.website/",
+    "textStart": " Capable Benefits Pricing Testimonials Join Waitlist Benefits Pricing Testimonials Join Waitlist New Build your connections now Empower Your Social Connections with Capable Join Capable to build authentic connections and share your passions effortlessly. Download App Download App Figma File Available for this template Trusted by 1000+ businesses across the world Empowering authentic connections for a vibrant social experience. 450 450 450 k+ k+ k+ Shared moments and stories every month 150 150 150 k+ k+ k+ Communities thriving across diverse interests 0 0 0 k+ k+ k+ Countries where Capable is growing big Our Benefits Discover Capable Benefits Unlock a world of meaningful connections, tailored experiences, and seamless social interaction. Our Benefits Discover Capable Benefits Unlock a world of meaningful connections, tailored experiences, and seamless social interaction. Our Benefits Discover Capable Benefits Unlock a world of meaningful connections, tailored experiences, and seamless social interaction. Authentic Connections Build genuine relationships with like-minded individuals. Authentic Connections Build genuine relationships with like-minded individuals. Authentic Connections Build genuine relationships with like-minded individuals. Global Reach Connect with people across 50+ countries effortlessly. Global Reach Connect with people across 50+ countries effortlessly. Global Reach Connect with people across 50+ countries effortlessly. Personalized Experience Tailored content and recommendations just for you. Personalized Experience Tailored content and recommendations "
+  },
+  {
+    "name": "meo-preview",
+    "status": 200,
+    "url": "https://meo.framer.ai/",
+    "textStart": " Meo \u00b7 The multi-profile browser for Mac Meo Use cases Why Meo Features Pricing Download Download Meo Download Download Meo Download Download Every account, sealed apart Meo keeps hundreds of browser profiles fully apart, each with its own cookies, fingerprint and proxy, while staying light enough to run all day on battery. Download for Mac Download for Mac Download for Mac Download for Mac Watch the 90-second tour Watch the 90-second tour Watch the 90-second tour Watch the 90-second tour Meo Profiles 24 Proxies 18 Fingerprints 24 Workspaces 4 Settings Studio plan 62 of 100 profiles used Harbor Studio Workspace \u00b7 6 seats Synced just now All 24 Running 9 Paused 15 Find a profile or note Quick profile New profile Profile Tags Proxy Note Cookies Storefront \u00b7 Austin Running 2h 14m Retail Retail Client US \u00b7 Texas 04 Holiday catalog upload 212 Storefront \u00b7 Austin Running 2h 14m Retail Retail Client US \u00b7 Texas 04 Storefront \u00b7 Austin Running 2h 14m US \u00b7 Texas 04 Ads \u00b7 Pine & Co. Opened 40 min ago Ads UK \u00b7 London 11 96 Ads \u00b7 Pine & Co. Opened 40 min ago Ads UK \u00b7 London 11 Ads \u00b7 Pine & Co. Opened 40 min ago UK \u00b7 London 11 Research \u00b7 Lumen Running 31m QA Client DE \u00b7 Berlin 02 Shared with Dana and Theo 148 Research \u00b7 Lumen Running 31m QA Client DE \u00b7 Berlin 02 Research \u00b7 Lumen Running 31m DE \u00b7 Berlin 02 Storefront \u00b7 Denver Yesterday Retail Retail US \u00b7 Colorado 09 Weekly price check 187 Storefront \u00b7 Denver Yesterday Retail Retail US \u00b7 Colorado 09 Storefront \u00b7 Denver Yesterday US \u00b7 Colorado 09 Social \u00b7 Fieldnote 2 days ago Social CA \u00b7 Toronto 05 63 Social \u00b7 Fieldnote 2 days ago Social CA "
+  },
+  {
+    "name": "gallery-preview",
+    "status": 200,
+    "url": "https://gallerytemplate.framer.website/",
+    "textStart": " Gallery - Framer Directory, Listing & Curation Template Gallery About Categories Locations Themes Blog Submit D i s c o v e r t h e b e s t c a f e s i n N e w Y o r k . A curated list of cafes - from hidden espresso bars to cozy brunch spots and late-night coffee havens. Get cafe recommendations straight in your inbox! Featured Elm & Iron Industrial coffee with heart in SoHo. D i s c o v e r t h e b e s t c a f e s i n N e w Y o r k . A curated list of cafes - from hidden espresso bars to cozy brunch spots and late-night coffee havens. Get cafe recommendations straight in your inbox! Featured Elm & Iron Industrial coffee with heart in SoHo. All Categories All-day Caf\u00e9 Artisan Bakery Brunch Spot Co-working Friendly Dessert & Pastry Eco-conscious Late-night Caf\u00e9 Pet Friendly Specialty Coffee All Categories All-day Caf\u00e9 Artisan Bakery Brunch Spot Co-working Friendly Dessert & Pastry Eco-conscious Late-night Caf\u00e9 Pet Friendly Specialty Coffee All Categories All-day Caf\u00e9 Artisan Bakery Brunch Spot Co-working Friendly Dessert & Pastry Eco-conscious Late-night Caf\u00e9 Pet Friendly Specialty Coffee All Locations Brooklyn Chelsea East Village Greenwich Village Lower East Side Midtown East SoHo Union Square West Village All Locations Brooklyn Chelsea East Village Greenwich Village Lower East Side Midtown East SoHo Union Square West Village All Locations Brooklyn Chelsea East Village Greenwich Village Lower East Side Midtown East SoHo Union Square West Village All Themes Bohemian Botanical Industrial Modern Retro Rustic Scandinavian Urban Chic Vintage All Themes Bohemian Botanical Indu"
+  },
+  {
+    "name": "shifter-preview",
+    "status": 200,
+    "url": "https://jobshifter.framer.website/",
+    "textStart": " Shifter - Free Job Directory Framer Template Shifter Search for a job Browse by Category Post a Job on Shifter Shifter Browse by Category Post a Job on Shifter Shifter Build & ship a jobboard fast with Framer Shifter is the largest job directory in the world. With over 2M visitors month, Shifter is the number one destination to find and list incredible jobs for tech industries. Post a Job on Shifter Try searching like Software Engineer Featured Job Posts Dontechi Head of Design Full-Time / Remote May 16, 2023 Dontechi Head of Design Full-Time / Remote May 16, 2023 Dontechi Head of Design Full-Time / Remote May 16, 2023 Chorus One Ventures Lead Part-Time / Remote May 16, 2023 Chorus One Ventures Lead Part-Time / Remote May 16, 2023 Chorus One Ventures Lead Part-Time / Remote May 16, 2023 Betatech VP of Marketing Full-Time / Remote May 16, 2023 Betatech VP of Marketing Full-Time / Remote May 16, 2023 Betatech VP of Marketing Full-Time / Remote May 16, 2023 Recent Job Posts Dontechi Head of Design Full-Time / Remote May 16, 2023 Dontechi Head of Design Full-Time / Remote May 16, 2023 Dontechi Head of Design Full-Time / Remote May 16, 2023 Scotfind UX Designer Full-Time / Remote May 16, 2023 Scotfind UX Designer Full-Time / Remote May 16, 2023 Scotfind UX Designer Full-Time / Remote May 16, 2023 Chorus One Ventures Lead Part-Time / Remote May 16, 2023 Chorus One Ventures Lead Part-Time / Remote May 16, 2023 Chorus One Ventures Lead Part-Time / Remote May 16, 2023 Betatech VP of Marketing Full-Time / Remote May 16, 2023 Betatech VP of Marketing Full-Time / Remote May 16, 2023 B"
+  },
+  {
+    "name": "fluxframe-preview",
+    "status": 200,
+    "url": "https://fluxframe.framer.website/",
+    "textStart": " Fluxframe - Animated Landing Page for SaaS & Startups New update available: Improved performance and workflow stability ')\" class=\"framer-1cc5vr8\" aria-hidden=\"true\"> Now running at 2\u00d7 faster execution speed: Read details ')\" class=\"framer-1cc5vr8\" aria-hidden=\"true\"> New update available: Improved performance and workflow stability ')\" class=\"framer-1cc5vr8\" aria-hidden=\"true\"> Now running at 2\u00d7 faster execution speed: Read details ')\" class=\"framer-1cc5vr8\" aria-hidden=\"true\"> Fluxframe Features Process Capabilities Reviews Pricing FAQ Get Fluxframe Get Fluxframe Fluxframe Fluxframe Trusted by 3.4k+ Teams B u i l d s y s t e m s t h a t r u n t h e m s e l v e s C r e a t e w o r k f l o w s t h a t e v o l v e , a d a p t , a n d s t a y i n s y n c o n t h e i r o w n . Get Started Get Started Get Started Get Started Request a demo Request a demo Request a demo Request a demo TRUSTED BY THE WORLD\u2019S LEADING INNOVATORS Features Core capabilities, engineered for scale Every module is designed to reduce friction, optimize workflows, and adapt to your stack. Modular Architecture A system built to scale through independent building blocks. Real-Time Insights Access dashboards and metrics instantly to make smarter, faster decisions. Conversion Rate +17.4% Real-Time Insights Access dashboards and metrics instantly to make smarter, faster decisions. Conversion Rate +17.4% Real-Time Insights Access dashboards and metrics instantly to make smarter, faster decisions. Conversion Rate +17.4% Decentralized network A resilient, secure, and fault-tolerant system designed for scalabilit"
+  },
+  {
+    "name": "pkg-test",
+    "status": 200,
+    "url": "https://registry.npmjs.org/@playwright/test/latest",
+    "version": "1.65.1",
+    "license": "Apache-2.0",
+    "peers": null,
+    "engines": {
+      "node": ">=20"
+    }
+  },
+  {
+    "name": "pkg-lucide-react",
+    "status": 200,
+    "url": "https://registry.npmjs.org/lucide-react/latest",
+    "version": "1.74.0",
+    "license": "ISC",
+    "peers": {
+      "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+      "@types/react": "*"
+    },
+    "engines": null
+  },
+  {
+    "name": "pkg-qrcode.react",
+    "status": 200,
+    "url": "https://registry.npmjs.org/qrcode.react/latest",
+    "version": "4.2.0",
+    "license": "ISC",
+    "peers": {
+      "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+    },
+    "engines": null
+  },
+  {
+    "name": "pkg-plus-jakarta-sans",
+    "status": 200,
+    "url": "https://registry.npmjs.org/@fontsource-variable/plus-jakarta-sans/latest",
+    "version": "5.3.0",
+    "license": "OFL-1.1",
+    "peers": null,
+    "engines": null
+  }
+]

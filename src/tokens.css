@@ -1,0 +1,25 @@
+/* Original ReeKlaim tokens. Font: self-hosted Plus Jakarta Sans, SIL OFL. */
+@font-face{font-family:ReeKlaim Sans;font-style:normal;font-weight:200 800;font-display:swap;src:url('/fonts/plus-jakarta-sans-latin-wght-normal.woff2') format('woff2')}
+:root {
+  --midnight:#10101c; --violet:#7c3aed; --lavender:#a78bfa; --cloud:#f8fafc;
+  --font: 'ReeKlaim Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --bg:#fff; --surface:#fff; --surface-alt:#f8f8fb; --text:#10101c; --muted:#656473;
+  --border:#e5e4eb; --input-border:#928c9d; --accent:#7c3aed; --link:#6d28d9; --soft:#f1ebfc;
+  --peach:#f4ede6; --mint:#edf5ef; --dark-section:#171724;
+  --success:#126b4d; --success-bg:#edf8f1; --warning:#8e530b; --warning-bg:#fff4dc;
+  --error:#b42338; --error-bg:#fff0f2; --info:#1d4ed8; --info-bg:#edf4ff;
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:24px; --space-6:32px; --space-7:48px; --space-8:64px; --space-9:96px;
+  --radius-sm:6px; --radius:10px; --radius-lg:18px; --radius-pill:999px;
+  --shadow-sm:0 2px 8px #10101c06; --shadow:0 14px 44px #10101c0c; --shadow-float:0 18px 50px #34274e20;
+  --focus:0 0 0 3px var(--bg),0 0 0 5px var(--link); --motion-fast:140ms; --motion:220ms;
+  color-scheme:light; background:var(--bg); color:var(--text);
+}
+:root[data-theme=dark] {
+  --bg:#10101c; --surface:#191925; --surface-alt:#20202e; --text:#f8fafc; --muted:#b4b2c3;
+  --border:#383647; --input-border:#817c91; --link:#c2a6ff; --soft:#2a2040;
+  --peach:#2a252a; --mint:#1a2e27; --dark-section:#191925;
+  --success:#a0dfc4; --success-bg:#16362c; --warning:#f3cf80; --warning-bg:#3b2d12;
+  --error:#ffacba; --error-bg:#40232b; --info:#abc7ff; --info-bg:#1c304c;
+  --shadow:0 14px 44px #0002; color-scheme:dark;
+}
+/* Breakpoints: 480 compact phones, 640 cards, 768 tablets, 1100 navigation, 1440 wide screens. */

@@ -1,0 +1,12 @@
+.local/
+.env*
+.git/
+.vercel/
+private-storage/
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+docs/evidence/
+*.log

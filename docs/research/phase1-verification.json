@@ -1,0 +1,166 @@
+{
+  "phase": 1,
+  "status": "PHASE 1 IMPLEMENTED — LIVE VERIFICATION PENDING",
+  "recordedAtUtc": "2026-11-17T15:00:34.406476+00:00",
+  "runtime": {
+    "node": "22.23.5",
+    "npm": "10.9.9",
+    "git": "2.53.0.windows.1",
+    "portableNodeProvenance": {
+      "source": "https://nodejs.org/dist/latest-v22.x/node-v22.23.5-win-x64.zip",
+      "sha256": "4a191082e9706866830379d577d2cc8a50c776fcd9436a8d061b063ed0d9a0e3",
+      "verified": true
+    }
+  },
+  "verification": {
+    "install": {
+      "command": "npm.cmd install --ignore-scripts --no-fund",
+      "exitCode": 0,
+      "packagesAdded": 311,
+      "auditVulnerabilitiesAtInstall": 0
+    },
+    "typecheck": {
+      "command": "npm.cmd run typecheck; also tsc --noEmit in production build",
+      "exitCode": 0
+    },
+    "lint": {
+      "command": "npm.cmd run lint",
+      "exitCode": 0
+    },
+    "unitTests": {
+      "command": "npm.cmd test",
+      "exitCode": 0,
+      "passedFiles": 4,
+      "passedTests": 51,
+      "durationSeconds": 16.96,
+      "liveEvidence": false,
+      "walletMockProfile": "current",
+      "walletMockAllowMainnet": false,
+      "walletMockNetwork": "forbidden by test fetch stub"
+    },
+    "build": {
+      "command": "npm.cmd run build",
+      "exitCode": 0,
+      "modules": 1137,
+      "jsBytesReported": 2890120,
+      "gzipJsBytesReported": 578420,
+      "warning": "Large SDK-containing production chunk; optimize before consumer launch"
+    },
+    "productionDebugMarkers": {
+      "Proof, before promises.": false,
+      "A tiny transfer. A real proof.": false,
+      "DEVELOPER WORKSPACE / PHASE 1": false,
+      "PUBLIC_TEST_MNEMONIC": false,
+      "abandon abandon abandon": false
+    }
+  },
+  "networkHealth": {
+    "native": {
+      "ok": true,
+      "chainId": "qorechain-diana",
+      "height": "10260959",
+      "blockTime": "2026-11-17T14:50:36.965801391Z",
+      "checkedAt": "2026-11-17T14:50:38.180Z"
+    },
+    "evm": {
+      "ok": true,
+      "chainId": "0x2648"
+    },
+    "testnetOnly": true,
+    "authentication": false
+  },
+  "browser": {
+    "status": "Not verified",
+    "reason": "Computer-use tool could not confidently determine Chrome URL and stopped; no bypass attempted."
+  },
+  "realWallet": {
+    "observed": false,
+    "capabilitiesObserved": false,
+    "balanceObserved": false,
+    "pqcRegistrationObserved": false,
+    "transactionApproved": false
+  },
+  "genuineTransactionHash": null,
+  "onChainHybridEvidence": null,
+  "deployment": null,
+  "authenticatedSessionsCreated": false,
+  "phase2Started": false,
+  "git": {
+    "initialized": true,
+    "branch": "main",
+    "commitsCreated": false,
+    "remoteAdded": false
+  },
+  "phase0Documents": {
+    "unchanged": [
+      "docs/MASTER_PLAN.md",
+      "docs/ARCHITECTURE.md",
+      "docs/PRODUCT_REQUIREMENTS.md",
+      "docs/DATABASE_DESIGN.md",
+      "docs/AUTHENTICATION_DESIGN.md",
+      "docs/UI_UX_DESIGN.md",
+      "docs/SECURITY_THREAT_MODEL.md",
+      "docs/EXECUTION_PHASES.md",
+      "docs/SOURCE_REFERENCES.md",
+      "docs/TESTNET_ECONOMY.md"
+    ],
+    "updated": [
+      "AGENTS.md",
+      "docs/BLOCKCHAIN_INTEGRATION.md",
+      "docs/HACKATHON_COMPLIANCE.md",
+      "AI_USAGE.md",
+      "THIRD_PARTY_NOTICES.md"
+    ]
+  },
+  "sourceFileSha256": {
+    "src/App.tsx": "e3ac51bba8ce1a1db895a4d656ce4b07870f740f74ec92702ceab6194047a9e2",
+    "src/main.tsx": "497b03ccf6ea9fec865a59c8579f691af180c17042f56ac0c1d35ff53faaed99",
+    "src/styles.css": "8266524e6b05ce07502c7a16c1552fbff8b1c8cc00e6951346d9821d4c267692",
+    "src/vite-env.d.ts": "f37b318f245a1ab1c97d1e640816cb6e2f4dff77af3b4e3e32b9ae2159e64e5e",
+    "src/components/Button.tsx": "6a4f1d45f8e980689e17a0623bcb745565f9fd3eded7fda2b6205f77c55ff65d",
+    "src/components/WalletCard.tsx": "42f9f275d844a3bf61a6908a93b60f0825d28142fbff4eb0f1b6311a8f8b229a",
+    "src/lib/amounts.ts": "316ed58cba124b15c890f41c52656cf972f1d87f1cb52598072ce90c878277a8",
+    "src/lib/api.ts": "495bfba77d2e84fd11b6e6034e7ab402a39c72f7cad1ac510b00257c3378a283",
+    "src/lib/network.ts": "6cfcc3722eb8b305d02267fbbee569166f32f9135a7f54df82c871d37698266a",
+    "src/lib/proof.ts": "c0ef4362e16eb544fd326975cbf216d3ca945d909d054b1e3e72ec17098c0256",
+    "src/lib/receipt.ts": "3c6516567d6203735b8ce6cef81d6b29d18006dcee670e245a0bc941a338c62c",
+    "src/pages/ProofPage.tsx": "47b18e442e219cb0aa5883736ca4293993602813d7e3294ec9a2d447a1621ce7",
+    "src/wallet/adapter.ts": "5cd38272437f76b59655022f61c657a3a9799ab8d98a07c2209aa474e3457605",
+    "src/wallet/WalletProvider.tsx": "a94e21e98f99790d47698105ba9188d9af723f82b89cfd3afbbf7bdc4cd2a31f",
+    "server/chain.ts": "3bea3d63c86c4216e5c618eacb8bde56f004f0af8c640727b0a992cb2bd1bcb4",
+    "scripts/check-network.mjs": "b005412b623e236c195e531000e35318fa99c358385df4ff6088133ab4c4fd3d",
+    "scripts/Use-Node22.ps1": "be5185c8381650550b788d48d0505830941c7bc0a19a2000ef874b7924112b19",
+    "tests/fixtures.ts": "4873fe32b82893f59749e85ba48c3b4cc6fbcc7947ea3e5a0a7f19c028201d58",
+    "tests/network.test.ts": "93f074547d1c136acd6d434db4ecde5b204241a8ce0d58d0e6f321424a0394d8",
+    "tests/receipt.test.ts": "264a014ffac0bc75c5b42ad3ce1b1dce4a2aa317fce8216de4ccf4428a6394d8",
+    "tests/server.test.ts": "c60e7f966925466a07a36e561a64c40378ec36076cb84392b28824a06ca7e862",
+    "tests/setup.ts": "afb45531279e98ef6152b5b725b13413f1fd073ea4f31d70140fc9df18a9256b",
+    "tests/wallet.test.tsx": "3f056a27af1dc7d45fa6d7648a031abc037ca5e29a311cbc33dd5a26439e746b"
+  },
+  "documentChecks": {
+    "status": "passed",
+    "markdownFilesChecked": 17,
+    "relativeLinksChecked": 43,
+    "brokenRelativeLinks": 0,
+    "researchJsonFilesParse": true,
+    "documentSha256": {
+      "README.md": "a4793f8da29e352e0a7c19891f84dee0cbf4035587889da5dcf3653e63cd24cb",
+      "AGENTS.md": "b776815d7809ff3b5ecaaff41c43ae3818151ea2f65fa41948bcfda1a739676a",
+      "AI_USAGE.md": "eea0db7c39c488ca27f8995187aa85cdf42b5ee987e55108237b444e25ffd795",
+      "THIRD_PARTY_NOTICES.md": "e1912f398f080e655fcc43188566a77534096240f10b406b492786b2aea686a2",
+      "docs/ARCHITECTURE.md": "29ffdaa2be8568ccd681bdc0fd830f9f0f8b719f77643e8cdc50002e9b72dd08",
+      "docs/AUTHENTICATION_DESIGN.md": "12ad8f55ceadff067a422dad645d84fe24c6abf407b79e237e22b06bd64dd07d",
+      "docs/BLOCKCHAIN_INTEGRATION.md": "abce3b0a3cf9be1affe3ef37a30c790c877696163ca8326c75b3a1baa18da881",
+      "docs/DATABASE_DESIGN.md": "720ad45265ae01b16a5354403c4d7bf3dc0d2cd8f5669f1e6a0ea5f246488f74",
+      "docs/EXECUTION_PHASES.md": "6ebaa26422f19729f30c40b2b28adc82178697ad1f0b7070097eb909bde75917",
+      "docs/HACKATHON_COMPLIANCE.md": "8851412f35b278548cda1e517d28f0baf8b7d01adf42b194ae9e9f83e7859b3c",
+      "docs/MASTER_PLAN.md": "69e39f489576585b1720e551de3ebbf8ceafc55c95f3689e1c7411a57f8e987d",
+      "docs/PHASE_1_REPORT.md": "3094dd6ad9b628425d023716bd996b38ae3c2e5c6bb4e986c17953c830fb7f3f",
+      "docs/PRODUCT_REQUIREMENTS.md": "b1b62a618da81ef1be5f6f76aa6318a3bbe7ee8daccf5b2cb492b14ebceed682",
+      "docs/SECURITY_THREAT_MODEL.md": "ec82201ce28e3a55071ae88d08978b0817beba8c83d62c8f057a03c824b29d51",
+      "docs/SOURCE_REFERENCES.md": "e2257eb0a12cfe66b11eb42fd6a72242ad4b13c8ef34f15d5a82d50f17535967",
+      "docs/TESTNET_ECONOMY.md": "7f4e4190b5651d3d30d9791590a42615855170dbc50076c910fdc8b321f6af0b",
+      "docs/UI_UX_DESIGN.md": "75711218c0a6807e743a4c2574c9d91f9dc659770fcb1759c5a25ec5bb3ac85e"
+    }
+  }
+}

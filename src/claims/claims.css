@@ -1,0 +1,10 @@
+.claim-workspace{display:grid;gap:22px;overflow-wrap:anywhere}
+.claim-workspace h2{font-size:clamp(26px,4vw,42px);margin-block:8px}
+.claim-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-block:14px}
+.claim-listing h3{margin-top:12px}
+.claim-timeline{display:grid;gap:12px;padding-left:24px}
+.claim-timeline li{padding:8px 4px;border-bottom:1px solid var(--border)}
+.claim-timeline p{margin-bottom:0;white-space:pre-wrap}
+.claim-evidence{max-height:58vh;max-width:100%;object-fit:contain;display:block}
+.claim-workspace textarea{width:100%;min-height:100px;padding:12px;color:var(--text);background:var(--surface);border:1px solid var(--input-border);border-radius:10px}
+@media(max-width:700px){.claim-columns{grid-template-columns:1fr}}

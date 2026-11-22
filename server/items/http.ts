@@ -1,0 +1,20 @@
+import type { IncomingMessage,ServerResponse } from 'node:http';
+import { z } from 'zod';
+import { ItemService } from './service.ts';
+import { AuthService,type Session } from '../auth/service.ts';
+import { HttpError,requireCsrf,readJson,readBody } from '../auth/security.ts';
+import { validateUpload } from '../auth/storage.ts';
+let photoUploads=0;
+export async function itemRoute(req:IncomingMessage,res:ServerResponse,url:URL,items:ItemService,auth:AuthService,session:Session|null,sessionToken:string|null,preToken:string|null){
+ const path=url.pathname;const publicMatch=/^\/api\/recover\/([A-Za-z0-9_-]{43})(?:\/(photo|contact))?$/.exec(path);const reply=(status:number,value:unknown)=>{res.statusCode=status;res.end(JSON.stringify(value));};
+ if(url.search)throw new HttpError(400,'QUERY','Unexpected query.');
+ if(publicMatch){const token=publicMatch[1];if(req.method==='GET'&&!publicMatch[2])return reply(200,await items.publicRead(token));if(req.method==='GET'&&publicMatch[2]==='photo'){const bytes=await items.publicPhoto(token);res.setHeader('Content-Type','image/png');res.setHeader('Content-Security-Policy',"default-src 'none'; sandbox");res.end(bytes);return;}
+  if(req.method==='POST'&&publicMatch[2]==='contact'){requireCsrf(req,items.config,sessionToken??preToken);if(!session&&!await auth.pre(preToken))throw new HttpError(401,'PRE','Refresh this page before sending a contact request.');await auth.limit('finder-ip:'+req.socket.remoteAddress,5,3600);await auth.limit('finder-tag:'+token,20,86400);const input=z.object({message:z.string().trim().min(10).max(1000).refine(s=>Array.from(s).every(char=>char.charCodeAt(0)>=32&&char.charCodeAt(0)!==127&&!['<','>'].includes(char)))}).strict().parse(await readJson(req));return reply(201,await items.contact(token,input.message));}
+ }
+ if(!session)throw new HttpError(401,'AUTH_REQUIRED','Sign in with QoreX to access your items.');if(req.method!=='GET')requireCsrf(req,items.config,sessionToken);
+ if(path==='/api/items'){if(req.method==='GET')return reply(200,await items.list(session.account_id));if(req.method==='POST'){await auth.limit('item-create:'+session.account_id,30,3600);return reply(201,await items.create(session.account_id,await readJson(req,8192)));}}
+ const match=/^\/api\/items\/([a-f0-9-]{36})(?:\/(intent|approval|verify|rotate|archive|missing|photo))?$/.exec(path);if(match){const id=z.string().uuid().parse(match[1]);const action=match[2];if(req.method==='GET'&&!action)return reply(200,await items.detail(session.account_id,id));if(req.method==='PATCH'&&!action){const input=z.object({version:z.number().int().positive(),input:z.unknown()}).strict().parse(await readJson(req,8192));return reply(200,await items.edit(session.account_id,id,input.input,input.version));}
+  if(req.method==='POST'){await auth.limit('item-action:'+session.account_id,40,300);if(action==='approval')return reply(200,await items.beginApproval(session.account_id,id));if(action==='intent')return reply(200,await items.intent(session.account_id,id));if(action==='verify'){const input=z.object({hash:z.string().regex(/^[a-fA-F0-9]{64}$/)}).strict().parse(await readJson(req));return reply(200,await items.verify(session.account_id,id,input.hash.toUpperCase()));}if(action==='rotate'||action==='archive'||action==='missing')return reply(200,await items.action(session.account_id,id,action));if(action==='photo'){await auth.limit('public-photo:'+session.account_id,10,3600);const mime=req.headers['content-type']??'';if(!['image/jpeg','image/png','image/webp'].includes(mime))throw new HttpError(415,'PHOTO','Choose a PNG, JPEG or WebP image.');if(photoUploads>=2)throw new HttpError(429,'BUSY','Image processing is busy. Retry shortly.');photoUploads++;try{const current=await items.detail(session.account_id,id);const photo=await validateUpload(await readBody(req,4194304),mime);return reply(200,await items.edit(session.account_id,id,current.input,current.version,photo.bytes));}finally{photoUploads--;}}}
+ }
+ throw new HttpError(404,'ITEM_ROUTE','Item route not found.');
+}

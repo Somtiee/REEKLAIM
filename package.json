@@ -1,0 +1,61 @@
+{
+  "name": "reeklaim",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ReeKlaim privacy-conscious lost-and-found product preview on Diana testnet",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "verify:network": "node scripts/check-network.mjs",
+    "test:e2e": "playwright test",
+    "db:setup": "tsx scripts/setup-local.ts",
+    "start": "tsx server/start.ts",
+    "test:auth": "vitest run auth-",
+    "db:migrate": "tsx scripts/run-migrations.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "5.3.0",
+    "@qorechain/qorex-types": "0.1.0",
+    "@qorechain/sdk": "0.14.0",
+    "cosmjs-types": "0.11.0",
+    "lucide-react": "1.74.0",
+    "pg": "8.23.1",
+    "qrcode.react": "4.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "sharp": "0.35.5",
+    "tsx": "4.23.15",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.65.1",
+    "@qorechain/qorex-wallet-mock": "0.1.0",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@types/node": "26.6.6",
+    "@types/pg": "8.23.1",
+    "@types/react": "18.3.0",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "eslint": "10.15.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.14.0",
+    "jsdom": "31.0.1",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.73.0",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  }
+}
