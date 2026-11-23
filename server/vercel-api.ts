@@ -3,7 +3,14 @@ import { loadAuthConfig } from './auth/config.ts';
 import { createAuthMiddleware } from './auth/http.ts';
 import { createChainMiddleware } from './chain.ts';
 
-const config = loadAuthConfig();
+// The public deployment serves one canonical origin. Preview retains its own explicit setting.
+const productionOrigin = 'https://reeklaim.vercel.app';
+const config = loadAuthConfig({
+ ...process.env,
+ APP_ORIGIN: process.env.VERCEL_ENV === 'preview' || process.env.VERCEL_ENV === 'development'
+  ? process.env.APP_ORIGIN
+  : productionOrigin,
+});
 if (process.env.NODE_ENV !== 'production' || !config?.objectStorage) {
  throw new Error('Vercel requires production settings and a private evidence bucket.');
 }
