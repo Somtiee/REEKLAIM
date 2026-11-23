@@ -1,8 +1,8 @@
 import { build } from 'esbuild';
 
 await build({
-  entryPoints: ['server.ts'],
-  outfile: 'server.mjs',
+  entryPoints: ['server/vercel-api.ts'],
+  outfile: '.vercel-runtime/api.mjs',
   platform: 'node',
   target: 'node22',
   format: 'esm',

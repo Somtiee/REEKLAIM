@@ -5,7 +5,7 @@ Release remains blocked. Confirm the preferred alias reeklaim.vercel.app or fall
 ## Vercel staging
 
 1. Use an eligible Vercel Hobby account for non-commercial use and leave billing and real monetization disabled. Sign in in the account owner's browser or with the CLI credential flow. The installed CLI reported 50.12.3 with no active credentials. Use a reviewed CLI supporting the June 2026 Node server entrypoint. Select the intended project with access-controlled staging. [Hobby](https://vercel.com/docs/plans/hobby) · [Terms](https://vercel.com/legal/terms) · [Node server support](https://vercel.com/changelog/deploy-node-servers-with-zero-configuration)
-2. The root `vercel.json` selects the Node backend for Git deployments. For CLI builds use `vercel build` from the linked project. Select a compatible Node 22 patch release. Verify the generated function includes dist/index.html, its assets and the Linux sharp binary. The root Node entry uses the same-origin API and SPA handling, document CSP and security headers. The build command is npm run build, and the function timeout is 60 seconds. Clear any project output-directory override left over from a static Vite deployment.
+2. The root `vercel.json` serves the Vite frontend from `dist` and routes `/api/` requests to the dedicated Node function. For CLI builds use `vercel build` from the linked project. Select a compatible Node 22 patch release. Verify the function includes the generated API bundle and the Linux sharp binary. The function timeout is 60 seconds. Confirm direct SPA navigation, CSP, and raw request body handling.
 3. Set APP_ORIGIN to the actual exact HTTPS staging host. Confirm incoming Host and Origin and raw request bodies, including near-limit uploads and downloads. Test secure cookies and routing after a direct refresh. Protect staging before allowing browser traffic. [Functions limits](https://vercel.com/docs/functions/limitations)
 4. Check production request identity across independent clients and function instances. Existing per-IP rate limits use the Node socket peer. If the gateway supplies a shared peer, verify a trusted platform IP adapter or equivalent ingress control before exposure. Verify pool budgets across instances and keep logs free of cookies, CSRF data, evidence URLs and request bodies.
 5. Run the [hosted smoke checklist](PRODUCTION_SMOKE_TEST.md) and live owner/finder walkthrough. If testing a paid testnet flow requires changing a gate, use a separately authorized, access-controlled staging project and the verified treasury. Keep public production collection and automatic publication disabled until approval.
@@ -21,7 +21,7 @@ If Vercel Functions cannot meet the checks at zero cost, the supported alternate
 
 ## Runtime environment
 
-The Vercel build bundles the pinned QoreChain SDK and its module dependencies into a generated Node entry before packaging. The generated file stays out of Git and the public asset directory. Node loads it on Vercel even when the platform disables CommonJS loading of ESM modules.
+The Vercel build bundles the pinned QoreChain SDK into the Node API artifact. The generated bundle stays out of Git and the public asset directory. The frontend can load if the API fails to start. A failed API startup produces a generic 503 response and a redacted diagnostic in Vercel runtime logs.
 
 | Setting | Value |
 | --- | --- |
